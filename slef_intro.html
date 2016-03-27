@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>自我介绍</title>
+        <style>
+            body{
+                margin:0;
+            }
+            header {
+                margin-left:20%;
+                float: left;
+                width:80%;
+                background-color: grey;
+                color: white;
+                text-align: center;
+            }
+
+            nav {
+                background-color: lightgrey;
+                line-height: 30px;
+                height: 100%;
+                position: fixed;
+                width:20%;
+                float: left;
+                padding: 0;
+                overflow: auto;
+            }
+            nav.navbar ul{
+                list-style-type: none;
+                margin:0;
+                padding:0;
+                width:100%;
+            }
+            nav.navbar li a{
+                display: block;
+                color: #000;
+                padding: 8px 0 8px 16px;
+                text-decoration: none;
+                text-align: center;
+                transition: all .3s;
+            }
+            nav.navbar li a:hover{
+                background-color: #555;
+                color: white;
+            }
+            section {
+                float: left;
+                padding:1px 16px;
+                margin-left:20%;
+                height: auto;
+                width:80%;
+                background-color: ghostwhite;
+                box-sizing: border-box;
+            }
+
+            footer {
+                background-color: black;
+                color: whitesmoke;
+                clear: both;
+                text-align: center;
+                padding: 5px;
+            }
+
+            a:link {
+                text-decoration: none;
+                color: dimgray;
+                font-family: Consolas;
+                /*font-style: italic;*/
+            }
+            img{
+                border-radius: 50%;
+            }
+            .bgmusic{
+                text-align: center;
+            }
+            .tooltip{
+                position:relative;
+                text-align: center;
+                display: inline-block;
+            }
+            .tooltip .tooltiptext{
+                opacity:0;
+                width: 240px;
+                background-color: black;
+                color: #fff;
+                text-align: center;
+                padding:5px;
+                border-radius: 6px;
+                position: absolute;
+                z-index: 1;
+
+
+                bottom: 105%;
+                left: 50%;
+                margin-left: -120px;
+
+                transition: all 2s;
+            }
+            .tooltip:hover .tooltiptext{
+                opacity:0.8;
+            }
+            .card{
+                padding:6px;
+                margin-bottom: 20px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+            .card p {
+                text-indent: 35px;
+            }
+            div.card:hover{
+                box-shadow: 0 0px 30px 0px cyan;
+            }
+            .center-head{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div>
+                <nav class = "navbar">
+                    <h2 style="text-align: center ">Contact me</h2>
+                    <div style="text-align: center">
+                        <div class="tooltip">
+                            <img src="http://pa1.narvii.com/5793/2947ff84d6c5d18c69c288102dba7787f01bd204_hq.gif" alt="avatar" height="150px">
+                            <div class="tooltiptext">这是千棘酱~</div>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="mailto:fzls.zju@gmail.com" target="_blank">
+                                <!--svg file get from web-->
+                                <svg version="1.1" viewBox="0 0 45555 33097" width="50">
+                                    <g>
+                                        <path fill="#E75A4D" d="M41608 250c2030,0 3691,1661 3691,3691l0 1070 -5128 3663 -17458 12026 -17458 -12148 0 24295 -1314 0c-2030,0 -3691,-1661 -3691,-3691l0 -25214c0,-2030 1661,-3691 3691,-3691l18772 13918 18894 -13918z" />
+                                        <polygon fill="#E7E4D7" points="5255,8552 5255,32847 40172,32847 40172,8674 22713,20700 " />
+                                        <polygon fill="#B8B7AE" points="5255,32847 22713,20700 22634,20644 5255,32580 " />
+                                        <polygon fill="#B7B6AD" points="40172,8674 40182,32847 22713,20700 " />
+                                        <path fill="#B2392F" d="M45299 5011l6 24148c-88,2684 -1251,3642 -5123,3687l-10 -24173 5128 -3663z" />
+                                        <polygon fill="#F7F5ED" points="3941,250 22713,14168 41608,250 " />
+                                    </g>
+                                </svg>
+                                <span style="font-size: 40px"> Email</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.zhihu.com/people/feng-zhi-ling-shang" target="_blank">
+                                <img src="https://qph.is.quoracdn.net/main-thumb-t-44004-200-J1HmgN3kAqCucSIHTwzWyqEFVKEQuTjp.jpeg"
+                                     alt="zhihu" width="50" height="50">
+                                <span style="font-size: 40px"> Zhihu</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/fzls" target="_blank">
+                                <!--svg file get from web-->
+                                <svg aria-hidden="true" class="octicon octicon-mark-github" height="50" role="img" version="1.1" viewBox="0 0 16 16" width="50">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59 0.4 0.07 0.55-0.17 0.55-0.38 0-0.19-0.01-0.82-0.01-1.49-2.01 0.37-2.53-0.49-2.69-0.94-0.09-0.23-0.48-0.94-0.82-1.13-0.28-0.15-0.68-0.52-0.01-0.53 0.63-0.01 1.08 0.58 1.23 0.82 0.72 1.21 1.87 0.87 2.33 0.66 0.07-0.52 0.28-0.87 0.51-1.07-1.78-0.2-3.64-0.89-3.64-3.95 0-0.87 0.31-1.59 0.82-2.15-0.08-0.2-0.36-1.02 0.08-2.12 0 0 0.67-0.21 2.2 0.82 0.64-0.18 1.32-0.27 2-0.27 0.68 0 1.36 0.09 2 0.27 1.53-1.04 2.2-0.82 2.2-0.82 0.44 1.1 0.16 1.92 0.08 2.12 0.51 0.56 0.82 1.27 0.82 2.15 0 3.07-1.87 3.75-3.65 3.95 0.29 0.25 0.54 0.73 0.54 1.48 0 1.07-0.01 1.93-0.01 2.2 0 0.21 0.15 0.46 0.55 0.38C13.71 14.53 16 11.53 16 8 16 3.58 12.42 0 8 0z">
+
+                                    </path>
+                                </svg>
+                                <span style="font-size: 40px"> Github</span>
+                            </a>
+                        </li>
+                    </ul>
+
+
+                    <!--background music-->
+                    <br>
+                    <br>
+                    <br>
+                    <article class= "bgmusic tooltip">
+                        <iframe src="https://www.youtube.com/embed/VzEUeWnV73U?autoplay=1" width=90% height=auto>
+                            <p>to see this video, you need have access to youtube</p>
+                        </iframe>
+                        <div class="tooltiptext">
+                            下面的视频来自youtube,<br />
+                            需要翻墙使用orz<br />
+                            from一只找不到音乐外链的dog
+                        </div>
+                    </article>
+                </nav>
+                <header id="self-introduction" >
+                    <h1>Hi, I'm 陈计</h1>
+                </header>
+                <section>
+                    <h2 class = "center-head">Hobby</h2>
+                    <div class="card" style="background-color: ghostwhite;">
+                        <h4>Coding</h4>
+                        <code>
+                        <pre>
+                        <span style="color: red;">#include</span> &ltiostream&gt
+                        <span style="color: red;">#include</span> &ltstring&gt
+
+                        <span style="color: yellowgreen;">using namespace</span> std;
+
+                        <span style="color: deepskyblue;">int</span> <span style="color: yellowgreen;">main</span>(<span style="color: deepskyblue;">int</span> argc, <span style="color: deepskyblue;">char **</span>argv){
+                            <span style="color: yellowgreen;">auto</span> hello_world = [&](string name)-&gtvoid{cout&lt&lt"<span style="color: cyan;">Hello, World! I'm </span>"&lt&ltname;};
+                            <span style="color: yellowgreen;">hello_world</span>("<span style="color: cyan;">Chen Ji</span>");
+                            <span style="color: yellowgreen;">return</span> <span style="color: deepskyblue;">0</span>;
+                        }
+                        </pre>
+                        </code>
+                        <p>
+                            自从大一接触了编程后，便越发地爱上了它。目前已经学习过算法，数据结构，数据库，编程语言（C, C++, Java and so on)等，
+                            正在准备学习编译原理，操作系统原理，计算机组成等，以后应该会选择进行应用开发。
+                        </p>
+                    </div>
+                    <div class="card" style="background-color: cyan;">
+                        <h4>Reading</h4>
+                        <p>
+                            也喜欢读各种各样的书，比如科幻小说，经济学，心理学，轻小说，技术书籍等等~
+                        </p>
+
+                    </div>
+                    <div class="card" style="background-color: pink;">
+                        <h4>ACG</h4>
+                        <p>
+                            动画，漫画，游戏等等也十分感兴趣~
+                        </p>
+                    </div>
+
+                    <div class="card" style="background-color: greenyellow;">
+                        <h4>后注</h4>
+                        <p>
+                            初次做HTML网页，犹豫css/js等知识尚未学习加上艺术细胞较少，
+                            做的很粗糙，请见谅~
+                        </p>
+                    </div>
+                </section>
+            </div>
+            <footer>
+                Copyright 风之凌殇
+            </footer>
+        </div>
+
+    </body>
+</html>
