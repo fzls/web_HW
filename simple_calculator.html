@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>简易计算器</title>
+        <style>
+            #screen {
+                width: 200px;
+                height: 40px;
+                background-color: grey;
+                color: white;
+                border: solid;
+                text-align: right;
+            }
+
+            #calc {
+                border-style: solid;
+                width: 200px;
+                height: 250px;
+                background-color: grey;
+                color: white;
+            }
+
+            #calc tr {
+                text-align: center;
+            }
+
+            #calc td {
+                border-style: solid;
+                border-color: lightgrey;
+                margin: 5px;
+                padding: 10px;
+                width: 50px;
+            }
+
+            #calc td:hover {
+                box-shadow: 0 0px 30px 0px cyan;
+            }
+        </style>
+    </head>
+    <body>
+        simple calculator by Chen Ji <br>
+        <input type="text" id="screen" placeholder="这里是输出的地方" readonly="readonly"> </input> <br>
+        <table id="calc">
+            <tr>
+                <td class='operand' colspan="2" onclick="functional_key(this.textContent)">Backspace</td>
+                <td class='operand' colspan="2" onclick="functional_key(this.textContent)">clear</td>
+            </tr>
+            <tr>
+                <td class='operand' onclick="addToScreen(this.textContent)">1</td>
+                <td class='operand' onclick="addToScreen(this.textContent)">2</td>
+                <td class='operand' onclick="addToScreen(this.textContent)">3</td>
+                <td class='operator' onclick="addToScreen(this.textContent)">+</td>
+            </tr>
+            <tr>
+                <td class='operand' onclick="addToScreen(this.textContent)">4</td>
+                <td class='operand' onclick="addToScreen(this.textContent)">5</td>
+                <td class='operand' onclick="addToScreen(this.textContent)">6</td>
+                <td class='operator' onclick="addToScreen(this.textContent)">-</td>
+            </tr>
+            <tr>
+                <td class='operand' onclick="addToScreen(this.textContent)">7</td>
+                <td class='operand' onclick="addToScreen(this.textContent)">8</td>
+                <td class='operand' onclick="addToScreen(this.textContent)">9</td>
+                <td class='operator' onclick="addToScreen(this.textContent)">*</td>
+            </tr>
+            <tr>
+                <td class='operand' onclick="addToScreen(this.textContent)">0</td>
+                <td class='operand' onclick="addToScreen(this.textContent)">.</td>
+                <td class='operator' onclick="compute()">=</td>
+                <td class='operator' onclick="addToScreen(this.textContent)">/</td>
+            </tr>
+        </table>
+        <div>
+            由于不是考察算法，故仅实现简单的二元计算。<br>
+            比如 1+1=？ 9*10=？ 类似于这种
+        </div>
+
+        <script src="calculator.js"></script>
+    </body>
+</html>
