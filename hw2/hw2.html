@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>HW2</title>
+        <style>
+            .container{
+                float: left;
+                display: inline-block;
+            }
+            /*######*/
+            #tab {
+                width:300px;
+                border:3px solid cyan;
+            }
+            #tab .active{
+                background: #ffffff;
+            }
+            #tab h3{
+                margin:0;
+                padding:0;
+                font-size:14px;
+                float: left;
+                background: cyan;
+                width:60px;
+                height:24px;
+                line-height:24px;
+                text-align: center;
+            }
+            #tab div{
+                clear: both;
+                height:100px;
+                font-size: 14px;
+                padding:20px 0 0 20px;
+                display: none;
+            }
+            /*-----------------------------------------------*/
+            #spinner{
+                width:300px;
+                border: 3px solid cyan;
+            }
+            #spinner .side{
+                float: left;
+                width:30%;
+                background: pink;
+                text-align: center;
+                user-select: none;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+            }
+            #spinner .num{
+                float: left;
+                width:40%;
+                background: cyan;
+                text-align: center;
+                user-select: none;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+            }
+            /*-----------------------------------------------*/
+            #bar{
+                width:300px;
+                height: 20px;
+                border: 1px solid black;
+                position: relative;
+                text-align: center;
+            }
+            #slider{
+                width: 15%;
+                height: 100%;
+                background-color: cyan;
+                top:0;
+                left:0;
+                position: absolute;
+                cursor: pointer;
+            }
+            /*-----------------------------------------------*/
+            #progress_bar{
+                width: 300px;
+                height:25px;
+                border: 1px solid black;
+                position: relative;
+                text-align: center;
+            }
+            #progress{
+                width: 0;
+                height: 100%;
+                background: pink;
+                top:0;
+                left:0;
+                position: absolute;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            作业说明 <br>
+
+            用JavaScript实现下列功能之一： <br>
+            1. 屏幕上漂移的小图标，鼠标移上去后停止（点击打开另一个页面），离开后恢复漂移。 <br>
+            2. 选项卡 <br>
+            3. 数字输入（Slider, Spinner） <br>
+            4. 进度条 <br>
+        </div>
+        <div class="container">
+            <h4>2. 选项卡</h4>
+            <div id="tab">
+                <h3 class="active">tab1</h3>
+                <h3>tab2</h3>
+                <h3>tab3</h3>
+
+                <div style="display: block">this is TAB 1</div>
+                <div>this is TAB 2</div>
+                <div>this is TAB 3</div>
+
+            </div>
+        </div>
+        <div class="container">
+            <h4>3. 数字输入</h4>
+            <h4>Spinner</h4>
+            <div id="spinner">
+                <div class="side" id="minus">-</div>
+                <div class="num" id="number">15</div>
+                <div class="side" id="plus">+</div>
+            </div>
+            <h4>Slider</h4>
+            <div id="bar">
+                <div id="slider"></div>
+            </div>
+        </div>
+        <div class="container">
+            <h4>4. 进度条</h4>
+            <div id="progress_bar">
+                <div id="progress">0%</div>
+            </div>
+        </div>
+        <img src="https://tse1-mm.cn.bing.net/th?id=OIP.Mcff12b7e7800ecc2a70c05ef06df3d42o0&pid=15.1" alt="阿卡林" height="150px" id="akari">
+        <script src="hw2.js"></script>
+    </body>
+</html>
